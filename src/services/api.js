@@ -1,7 +1,8 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:5000/api"
+  //baseURL: "http://localhost:5000/api"
+  baseURL: "https://mern-backend-359j.onrender.com"
 });
 
 // attach token automatically
@@ -14,6 +15,3 @@ API.interceptors.request.use(req => {
 });
 
 export default API;
-
-
-
